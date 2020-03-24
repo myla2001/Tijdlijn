@@ -1,0 +1,115 @@
+* {
+	box-sizing: border-box;
+}
+
+.wrapper {
+	font-family: 'Lato', sans-serif;
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+}
+
+.box-area {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+}
+
+.box-date {
+	font-family: 'Montserrat', sans-serif;
+	display: flex;
+	background: linear-gradient(to right, #fff 45%, #e33939 45%, #e33939 45%, #fff 50%);
+	order: 2;
+	flex-basis: 100px;
+	color: #fff;
+}
+
+.box-date > span {
+	font-size: 18px;
+	padding: 10px;
+	margin: auto;
+	background-color: #e33939;
+}
+
+.box-text {
+	font-size: 14px;
+	padding: 20px;
+	border-radius: 25px;
+	color: #000;
+	order: 3;
+	width: 80%;
+	background: #eee;
+	margin-bottom: 5%;
+}
+
+.box-text h2 {
+	margin: 0;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+img {
+	width: 100%;
+}
+
+
+
+@media (min-width: 768px) {
+
+	.box-text, .custom {
+		width: 40%;
+	}
+
+	.box-right .box-text {
+		order: 1;
+		padding-right: 10px;
+	}
+
+	.box-right .custom {
+		order: 3;
+	}
+}
+
+
+
+@media (min-width: 1024px) {
+
+	.box-text, .custom {
+		width: 30%;
+	}
+}
+
+
+
+@media (min-width: 1920px) {
+
+	.box-text, .custom {
+		width: 40%;
+	}
+
+	.box-text > p {
+		display: inline-block;
+		float: left;
+		width: 45%;
+	}
+
+	img {
+		display: inline-block;
+		float: right;
+		width: 50%;
+	}
+
+	.afbeelding-links > p {
+		float: right;
+	}
+
+	.afbeelding-links > img {
+		float: left;
+	}
+
+	.afbeelding-links > h2 {
+		margin-left: 55%;
+	}
+
+}
+
